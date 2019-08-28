@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp">
+    <TextView
+        android:id="@+id/txtcelcius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="CELCIUS : "/>
+    <EditText
+        android:id="@+id/editcelcius"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:inputType="numberDecimal"
+        android:layout_toRightOf="@id/txtcelcius"/>
+    <Button
+        android:id="@+id/konversi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Konversi"
+        android:background="@android:color/holo_red_light"
+        android:layout_below="@id/editcelcius"/>
+    <TextView
+        android:id="@+id/txtkelvin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/konversi"
+        android:layout_marginTop="30dp"
+        android:text="KELVIN : "/>
+    <EditText
+        android:id="@+id/editkelvin"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/konversi"
+        android:layout_toRightOf="@id/txtkelvin"/>
+
+    <TextView
+        android:id="@+id/txtfahrenheit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtkelvin"
+        android:layout_marginTop="30dp"
+        android:text="FAHRENHEIT : "/>
+    <EditText
+        android:id="@+id/editfahrenheit"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/editkelvin"
+        android:layout_toRightOf="@id/txtfahrenheit"/>
+    <TextView
+        android:id="@+id/txtreamur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtfahrenheit"
+        android:layout_marginTop="30dp"
+        android:text="REAMUR : "/>
+    <EditText
+        android:id="@+id/editreamur"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/editfahrenheit"
+        android:layout_toRightOf="@id/txtreamur"/>
+</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
